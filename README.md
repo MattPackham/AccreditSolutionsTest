@@ -5,7 +5,7 @@ This is an ASP.NET MVC (.net Framework) application for searching GitHub for use
 
 To setup:
 
-  -Clone the solution in VS
+  -Clone the solution in VisualStudio
   
   -Ensure all nuget packages are successfully installed
   
