@@ -13,13 +13,6 @@ namespace AccreditSolutionsShared.Classes.Concrete
                 return UserMessages.NoUserNameProvidedMessage;
             }
 
-            var validUsernameRegex = new Regex(RegexPatterns.ValidUsernameRegex);
-
-            if (!validUsernameRegex.IsMatch(username))
-            {
-                return UserMessages.AlphaNumericValidationMessage;
-            }
-
             if (username.StartsWith("-") || username.EndsWith("-"))
             {
                 return UserMessages.AlphaNumericValidationMessage;
@@ -28,6 +21,13 @@ namespace AccreditSolutionsShared.Classes.Concrete
             if (username.Contains("--"))
             {
                 return UserMessages.SeqentialDashesValidationMessage;
+            }
+
+            var validUsernameRegex = new Regex(RegexPatterns.ValidUsernameRegex);
+
+            if (!validUsernameRegex.IsMatch(username))
+            {
+                return UserMessages.AlphaNumericValidationMessage;
             }
 
             return null;

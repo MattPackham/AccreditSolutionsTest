@@ -1,0 +1,71 @@
+﻿@model AccreditSolutions.Models.ViewModels.GitHubUserResultViewModel
+
+@{ ViewBag.Title = "GitHub User Results"; }
+
+<div class="user-header">
+    <div class="user-info">
+        <h2 class="page-title">GitHub User Details</h2>
+
+        <div class="user-details">
+            <h4 class="user-username"><strong>Username:</strong> @Model.Username</h4>
+            @if (Model.Location != null && !string.IsNullOrWhiteSpace(Model.Location))
+            {
+                <h4 class="user-location"><strong>Location:</strong> @Model.Location</h4>
+            }
+        </div>
+        </div>
+        <div class="user-avatar">
+            <img src="@Model.AvatarUrl" alt="User Avatar" />
+        </div>
+    </div>
+
+<h3 class="repositories-title">Repositories</h3>
+
+@if (Model.GitHubRepositories != null && Model.GitHubRepositories.Any())
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Repository Name</th>
+                <th>Stargazers</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var repo in Model.GitHubRepositories)
+            {
+                <tr>
+                    <td>@repo.RepositoryName</td>
+                    <td>@repo.StarCount</td>
+                    <td>@repo.Description</td>
+                    <td><a href="@repo.RepositoryUrl" target="_blank">View Repository</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No repositories found.</p>
+}
+
+<div class="button-container">
+    <a href="@Url.Action("RetrieveGitHubUser", "GitHubUserController")" class="btn btn-primary">Find Another User</a>
+</div>
+
+<style>
+
+    .btn-primary {
+        width: 25%;
+    }
+
+    p {
+        color: black;
+    }
+
+    h4 {
+        margin-bottom: 0px;
+    }
+
+</style>

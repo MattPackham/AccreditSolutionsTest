@@ -1,0 +1,69 @@
+﻿@model AccreditSolutions.Models.ViewModels.RetrieveGitHubUserViewModel
+
+@{
+    ViewBag.Title = "Retrieve GitHub User";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Retrieve GitHub User</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="~/js/regexPatterns.js"></script>
+    <script>
+        function validateForm() {
+            var username = document.querySelector('[name="Username"]').value;
+
+            if (!username || username.length <= 0) {
+                alert("Please enter a username.");
+                return false;
+            }
+
+            if (!ValidUsernameRegex.test(username)) {
+                alert("Username can only contain alphanumeric characters and dashes.");
+                return false;
+            }
+
+            if (username.startsWith("-") || username.endsWith("-")) {
+                alert("Username cannot start or end with a dash.");
+                return false;
+            }
+
+            if (username.includes("--")) {
+                alert("Username cannot contain consecutive dashes.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    @using (Html.BeginForm("RetrieveGitHubUser", "GitHubUser", FormMethod.Post))
+    {
+        <div class="container-page">
+            <h2>Search for GitHub User</h2>
+            <p>Please enter the username of the GitHub user you would like to retrieve.</p>
+
+            <div class="form-group">
+                @Html.TextBoxFor(model => model.Username, new { @class = "input-box", placeholder = "Enter username or email" })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+
+                @if (ViewData.ModelState.ContainsKey("Message"))
+                {
+                    <div class="error-message">
+                        @ViewData.ModelState["Message"].Errors[0].ErrorMessage
+                    </div>
+                }
+            </div>
+
+            <button type="submit" class="btn-primary" onclick="return validateForm()">Search</button>
+        </div>
+     }  
+    </body>
+</html>
+
