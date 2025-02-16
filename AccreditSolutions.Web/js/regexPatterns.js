@@ -1,0 +1,1 @@
+﻿const ValidUsernameRegex = /^[a-zA-Z0-9-]+$/;

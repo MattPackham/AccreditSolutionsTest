@@ -3,3 +3,21 @@
 ################################################################################
 
 /.vs
+/AccreditSolutionsShared/bin/Debug
+/AccreditSolutionsShared/obj/Debug
+/AccreditSolutionsTest/AccreditSolutions/bin
+/AccreditSolutionsTest/bin
+/AccreditSolutionsTest/obj/Debug
+/Service/bin/Debug
+/Service/obj/Debug
+/AccreditSolutions.ServiceTests/bin/Debug
+/AccreditSolutions.ServiceTests/obj/Debug
+/AccreditSolutions.SharedTests/bin/Debug
+/AccreditSolutions.SharedTests/obj/Debug
+/AccreditSolutions.WebTests/bin/Debug
+/AccreditSolutions.WebTests/obj/Debug
+/AccreditSolutions.Service/bin/Debug
+/AccreditSolutions.Service/obj/Debug
+/AccreditSolutions.Web/bin
+/AccreditSolutions.Web/AccreditSolutions/bin
+/AccreditSolutions.Web/obj/Debug
