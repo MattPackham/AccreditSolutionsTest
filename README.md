@@ -11,6 +11,6 @@ To setup:
   
   -For unit tests ensure that you have nunit3TestAdapter installed via nuget and VisualStudio extensions
   
-  -Set the startup project to AccreditSolutions.Web
+  -Set the startup project to AccreditSolutions.Web and run via IIS
   
   
