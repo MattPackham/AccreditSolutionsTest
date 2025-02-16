@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35706.149
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccreditSolutions.Web", "AccreditSolutionsTest\AccreditSolutions.Web.csproj", "{31A267C5-7187-4756-B6C0-5BBBA73145A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccreditSolutions.Service", "Service\AccreditSolutions.Service.csproj", "{016AC510-85FE-4455-BE60-58E69B1CF6AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccreditSolutions.Shared", "AccreditSolutionsShared\AccreditSolutions.Shared.csproj", "{2CE37BAD-D61C-4957-871B-86B6CE3B7D3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccreditSolutions.ServiceTests", "AccreditSolutions.ServiceTests\AccreditSolutions.ServiceTests.csproj", "{388C6966-0497-4DDE-A45B-F64C3003B624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccreditSolutions.SharedTests", "AccreditSolutions.SharedTests\AccreditSolutions.SharedTests.csproj", "{F469EDAB-9044-4543-81BA-07CC478A771D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccreditSolutions.WebTests", "AccreditSolutions.WebTests\AccreditSolutions.WebTests.csproj", "{530F949F-70AC-4F91-BCFE-0DBBFB1CD84F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31A267C5-7187-4756-B6C0-5BBBA73145A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A267C5-7187-4756-B6C0-5BBBA73145A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A267C5-7187-4756-B6C0-5BBBA73145A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A267C5-7187-4756-B6C0-5BBBA73145A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{016AC510-85FE-4455-BE60-58E69B1CF6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{016AC510-85FE-4455-BE60-58E69B1CF6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{016AC510-85FE-4455-BE60-58E69B1CF6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{016AC510-85FE-4455-BE60-58E69B1CF6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CE37BAD-D61C-4957-871B-86B6CE3B7D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE37BAD-D61C-4957-871B-86B6CE3B7D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE37BAD-D61C-4957-871B-86B6CE3B7D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE37BAD-D61C-4957-871B-86B6CE3B7D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{388C6966-0497-4DDE-A45B-F64C3003B624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{388C6966-0497-4DDE-A45B-F64C3003B624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{388C6966-0497-4DDE-A45B-F64C3003B624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{388C6966-0497-4DDE-A45B-F64C3003B624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F469EDAB-9044-4543-81BA-07CC478A771D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F469EDAB-9044-4543-81BA-07CC478A771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F469EDAB-9044-4543-81BA-07CC478A771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F469EDAB-9044-4543-81BA-07CC478A771D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{530F949F-70AC-4F91-BCFE-0DBBFB1CD84F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{530F949F-70AC-4F91-BCFE-0DBBFB1CD84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{530F949F-70AC-4F91-BCFE-0DBBFB1CD84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{530F949F-70AC-4F91-BCFE-0DBBFB1CD84F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {288365D2-1781-47F4-8CE7-9FDC49DDE885}
+	EndGlobalSection
+EndGlobal
